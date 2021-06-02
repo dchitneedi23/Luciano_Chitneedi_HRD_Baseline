@@ -23,7 +23,7 @@ int main()
     cout << "\n";
     vector <int> grades = userGrades(courseInfo); //Collects the grades for the courses
     cout << "\n";
-    int avg = average(grades); //Calculates the average of the grades
+    double avg = average(grades); //Calculates the average of the grades
 
     string discipline = hasDisciplineIssue(); //Checks if there is a discipline issue with the user
 
@@ -38,7 +38,7 @@ int main()
         printf("%-25s%-10i\n", courseInfo[i].c_str(), grades[i]);
     }
 
-    cout << "\nAverage: " << avg << "%\n"; //Prints average grade
+    printf("%-2s%-3.2f%-5s\n", "Average: ", avg, "%"); //Prints average grade
     cout << "Disciplinary Infraction: " << discipline << "\n"; //Prints wether or not the user has a dicipline issue
 
     if (avg > 90 && courseNum >= 5 && discipline == "No") { //If the user does not meet the requirements
