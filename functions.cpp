@@ -160,9 +160,9 @@ vector <int> userGrades(vector <string> courseInfo) { //Gets the grades in each 
 }
 
 //Will calculate the average of the grades
-int average(vector<int> grades) { //Calcualtes the average
+double average(vector<int> grades) { //Calcualtes the average
 
-	int avg = 0;
+	double avg = 0;
 
 	for (int i = 0; i < grades.size(); i++) { //Runs for the the number of grades
 		avg += grades[i]; //Adds the grade to avg
